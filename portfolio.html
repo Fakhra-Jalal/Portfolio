@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syeda Fakhra Jalal - Research Portfolio & Evidence</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .header-banner {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            height: 200px;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            padding: 0 40px 30px;
+        }
+
+        .header-avatar {
+            width: 80px;
+            height: 80px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            margin-right: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .header-info h1 {
+            color: white;
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        .header-info p {
+            color: rgba(255,255,255,0.9);
+            font-size: 14px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: -40px auto 40px;
+            padding: 40px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .contact-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 4px solid #667eea;
+        }
+
+        .contact-section p {
+            margin: 8px 0;
+            font-size: 14px;
+        }
+
+        .contact-section a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-section a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .subsection {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #fafafa;
+            border-radius: 8px;
+            border-left: 3px solid #667eea;
+        }
+
+        .subsection-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .subsection-subtitle {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 12px;
+            font-style: italic;
+        }
+
+        .detail {
+            margin: 8px 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .detail-label {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .award-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .award-table th {
+            background: #667eea;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .award-table td {
+            padding: 12px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .award-table tr:hover {
+            background: #f5f5f5;
+        }
+
+        .skill-group {
+            margin-bottom: 15px;
+        }
+
+        .skill-category {
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-tag {
+            background: #e8eaf6;
+            color: #667eea;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .project-card {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            border-color: #667eea;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+        }
+
+        .project-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .project-timeline {
+            font-size: 13px;
+            color: #999;
+            margin-bottom: 12px;
+        }
+
+        .project-description {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 12px;
+        }
+
+        .publication-table {
+            width: 100%;
+            font-size: 13px;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        .publication-table th {
+            background: #667eea;
+            color: white;
+            padding: 10px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .publication-table td {
+            padding: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .publication-table a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .publication-table a:hover {
+            text-decoration: underline;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 5px;
+        }
+
+        .badge-award {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .badge-published {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .badge-inpress {
+            background: #cfe2ff;
+            color: #084298;
+        }
+
+        .reference {
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            font-size: 13px;
+        }
+
+        .reference-name {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .reference-title {
+            color: #667eea;
+            font-size: 12px;
+        }
+
+        .reference-contact {
+            color: #666;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #999;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .icon {
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: -30px 10px 20px;
+                padding: 20px;
+            }
+
+            .section-title {
+                font-size: 20px;
+            }
+
+            .award-table, .publication-table {
+                font-size: 12px;
+            }
+
+            .award-table th, .award-table td,
+            .publication-table th, .publication-table td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-banner">
+        <div class="header-avatar">🤖</div>
+        <div class="header-info">
+            <h1>Syeda Fakhra Jalal</h1>
+            <p>Research & Teaching Associate · Master's Student, Biomedical Engineering</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Contact Section -->
+        <div class="contact-section">
+            <p><strong>📧 Email:</strong> <a href="mailto:fakhra.jalal@shu.edu.pk">fakhra.jalal@shu.edu.pk</a></p>
+            <p><strong>📱 Phone:</strong> +92-313-5368156</p>
+            <p><strong>🔗 LinkedIn:</strong> <a href="https://linkedin.com/in/syeda-fakhra-jalal" target="_blank">syeda-fakhra-jalal</a></p>
+            <p><strong>📍 Location:</strong> Karachi, Pakistan</p>
+        </div>
+
+        <!-- Academic Education -->
+        <div class="section">
+            <div class="section-title">
+                <span class="icon">🎓</span> Academic Education
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">Master of Engineering, Biomedical Engineering</div>
+                <div class="subsection-subtitle">Salim Habib University, Karachi</div>
+                <div class="detail"><span class="detail-label">Duration:</span> Mar 2025 – Present</div>
+                <div class="detail"><span class="detail-label">CGPA:</span> 3.75/4.0</div>
+                <div class="detail"><span class="detail-label">📄 Transcript:</span> <a href="#">ME Unofficial Transcript.pdf</a></div>
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">Bachelor of Engineering, Biomedical Engineering</div>
+                <div class="subsection-subtitle">Salim Habib University, Karachi (Silver Medalist, 2nd of Cohort)</div>
+                <div class="detail"><span class="detail-label">Duration:</span> Mar 2021 – Jan 2025</div>
+                <div class="detail"><span class="detail-label">Final CGPA:</span> 3.86/4.0</div>
+                <div class="detail"><span class="detail-label">Thesis:</span> Robotic Grasper with Integrated Haptic Feedback Mechanism</div>
+                <div class="detail"><span class="detail-label">Achievement:</span> Ranked 2nd in cohort, Silver Medal</div>
+                <div class="detail" style="margin-top: 12px;">
+                    <span class="detail-label">📄 Documents:</span>
+                    <div style="margin-top: 8px;">
+                        <a href="#">BE Official Transcript.pdf</a> | <a href="#">BE Degree/Diploma.pdf</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Awards & Honours -->
+        <div class="section">
+            <div class="section-title">
+                <span class="icon">🏆</span> Awards, Grants & Honours
+            </div>
+
+            <table class="award-table">
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Award / Recognition</th>
+                        <th>Prize/Details</th>
+                        <th>Proof</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2025 (Mar)</td>
+                        <td>Silver Medal - Bachelor of Engineering</td>
+                        <td>Salim Habib University</td>
+                        <td><a href="#">Certificate</a></td>
+                    </tr>
+                    <tr>
+                        <td>2024 (Sep)</td>
+                        <td>3rd Place, IEEE R10 Robotics Competition</td>
+                        <td>$250 Prize, Tokyo, Japan</td>
+                        <td><a href="#">Certificate</a> | <a href="#">Photos</a></td>
+                    </tr>
+                    <tr>
+                        <td>2024 (Sep)</td>
+                        <td>IEEE Travel Grant</td>
+                        <td>$2,500 for SYWL Congress</td>
+                        <td><a href="#">Award Letter</a></td>
+                    </tr>
+                    <tr>
+                        <td>2024 (Oct)</td>
+                        <td>IEEE Day Ambassador</td>
+                        <td>1 of 2 selected from IEEE Karachi</td>
+                        <td><a href="#">Selection Letter</a></td>
+                    </tr>
+                    <tr>
+                        <td>2024 (Oct)</td>
+                        <td>Top 50, Teknofest Pakistan</td>
+                        <td>Healthcare Innovation, $90 Prize</td>
+                        <td><a href="#">Certificate</a></td>
+                    </tr>
+                    <tr>
+                        <td>2024 (Jun)</td>
+                        <td>IEEE SIGHT Grant</td>
+                        <td>$6,790 for Solar Energy Project</td>
+                        <td><a href="#">Grant Award</a> | <a href="#">Report</a></td>
+                    </tr>
+                    <tr>
+                        <td>2024 (May)</td>
+                        <td>IEEE ComSoc Funding</td>
+                        <td>$105 to organize Connect 1.0</td>
+                        <td><a href="#">Confirmation</a></td>
+                    </tr>
+                    <tr>
+                        <td>2021-2025</td>
+                        <td>Merit Scholarship</td>
+                        <td>100% Tuition Waiver, 8 Semesters</td>
+                        <td><a href="#">Letters</a></td>
+                    </tr>
+                    <tr>
+                        <td>2021, 2022, 2024</td>
+                        <td>VC's Honours List</td>
+                        <td>SGPA 4.0/4.0</td>
+                        <td><a href="#">Certificates</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Key Research Projects -->
+        <div class="section">
+            <div class="section-title">
+                <span class="icon">🤖</span> Key Research Projects
+            </div>
+
+            <!-- Project 1: Robotic Grasper -->
+            <div class="project-card">
+                <div class="project-title">🏆 Robotic Grasper with Integrated Haptic Feedback (Bachelor's Thesis)</div>
+                <div class="project-timeline">Feb 2024 – Jan 2025 | 3rd Place IEEE R10 Robotics 2024, Tokyo</div>
+                <div class="project-description">
+                    Designed and built a 3-DOF robotic grasper enabling real-time tactile sensation for surgeons during minimally invasive procedures. Winner of 3rd place at IEEE Region 10 Robotics Competition 2024 in Tokyo with $250 cash prize.
+                </div>
+                <div class="detail"><strong>Hardware:</strong> 3-DOF robotic arm, FSR force sensors, MPU6050 IMU, haptic actuation</div>
+                <div class="detail"><strong>Software:</strong> Hapto-Grasp custom GUI for force visualization & threshold alerts</div>
+                <div class="detail" style="margin-top: 10px;">
+                    <strong>📸 Proof:</strong> <a href="#">3D Models</a> | <a href="#">Hardware Photos</a> | <a href="#">Circuit Diagrams</a> | <a href="#">Competition Certificate</a> | <a href="#">Thesis PDF</a>
+                </div>
+                <div class="detail" style="margin-top: 8px;">
+                    <strong>Skills:</strong> <div class="skill-list" style="margin-top: 5px;">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Robotics Control</span>
+                        <span class="skill-tag">FSR Sensors</span>
+                        <span class="skill-tag">Haptic Feedback</span>
+                        <span class="skill-tag">3D Printing</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Deep Learning -->
+            <div class="project-card">
+                <div class="project-title">🧠 Deep Learning Framework for Real-Time Tissue Classification</div>
+                <div class="project-timeline">Feb 2024 – Oct 2024 | Published in VFAST Journal 2026</div>
+                <div class="project-description">
+                    Developed deep learning pipeline for real-time tissue classification (fat, muscle, skin) in robotic-assisted surgery. YOLOv10 achieved 22ms inference time with 96.2% mAP@0.5 for surgical precision.
+                </div>
+                <div class="detail"><strong>Models Evaluated:</strong> GoogLeNet, YOLOv8, YOLOv10</div>
+                <div class="detail"><strong>Dataset:</strong> 1,800 tissue images with augmentation</div>
+                <div class="detail"><strong>Best Results:</strong> YOLOv10 → 22ms inference, 96.2% mAP</div>
+                <div class="detail" style="margin-top: 10px;">
+                    <strong>📸 Proof:</strong> <a href="#">Dataset Samples</a> | <a href="#">Model Comparison Chart</a> | <a href="#">Detection Outputs</a> | <a href="#">Publication (DOI: 10.21015/vtse.v14i1.2291)</a>
+                </div>
+                <div class="detail" style="margin-top: 8px;">
+                    <strong>Skills:</strong> <div class="skill-list" style="margin-top: 5px;">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">YOLOv8/v10</span>
+                        <span class="skill-tag">GoogLeNet</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">ANOVA Analysis</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: VIRUS -->
+            <div class="project-card">
+                <div class="project-title">🎙️ VIRUS: Voice-Interactive Robotic Assistant for HRI</div>
+                <div class="project-timeline">Sep 2025 – Present | Ongoing (Supervising)</div>
+                <div class="project-description">
+                    Voice-controlled robotic assistant executing real-time actions from natural language commands. Integrates speech recognition, NLP, and robotic actuation for intuitive human-robot interaction.
+                </div>
+                <div class="detail"><strong>Pipeline:</strong> Speech Recognition → NLP Processing → Robot Actuation</div>
+                <div class="detail"><strong>Features:</strong> Arm gestures, audio playback, web-based information retrieval</div>
+                <div class="detail" style="margin-top: 10px;">
+                    <strong>📸 Proof:</strong> <a href="#">GitHub Repository</a> | <a href="#">Demo Videos</a> | <a href="#">Architecture Diagrams</a>
+                </div>
+                <div class="detail" style="margin-top: 8px;">
+                    <strong>Skills:</strong> <div class="skill-list" style="margin-top: 5px;">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Speech Recognition</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">Robotics Control</span>
+                        <span class="skill-tag">HRI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Publications -->
+        <div class="section">
+            <div class="section-title">
+                <span class="icon">📚</span> Peer-Reviewed Publications
+            </div>
+
+            <table class="publication-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Title</th>
+                        <th>Venue</th>
+                        <th>Year</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Applied evaluation of object-detection models for real-time tissue recognition in robotics and minimally invasive surgery</td>
+                        <td><a href="https://doi.org/10.21015/vtse.v14i1.2291" target="_blank">VFAST Journal</a></td>
+                        <td>2026</td>
+                        <td><span class="badge badge-published">Published</span></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Digital prototyping and simulation of a humidity control robot for tunnel farming</td>
+                        <td><a href="https://doi.org/10.1109/KHI-HTC60760.2024.10482132" target="_blank">IEEE KHI-HTC 2024</a></td>
+                        <td>2024</td>
+                        <td><span class="badge badge-published">Published</span></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>AI-integrated clinical decision support framework for emergency triage</td>
+                        <td><a href="#" target="_blank">GCWOT 2026, Spain</a></td>
+                        <td>2026</td>
+                        <td><span class="badge badge-inpress">In Press</span></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>A statistical analysis of CNN architectures with Grad-CAM visualization on MRI brain scans</td>
+                        <td><a href="#" target="_blank">GCWOT 2026, Spain</a></td>
+                        <td>2026</td>
+                        <td><span class="badge badge-inpress">In Press</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Professional Experience -->
+        <div class="section">
+            <div class="section-title">
+                <span class="icon">💼</span> Professional Experience
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">Research & Teaching Associate</div>
+                <div class="subsection-subtitle">Salim Habib University, Karachi | Mar 2025 – Present</div>
+                <div class="detail">✓ Mentor undergraduate students in robotics, signal processing, AI</div>
+                <div class="detail">✓ Conduct lab sessions on biosignal processing, biomedical instrumentation</div>
+                <div class="detail">✓ Curriculum development & innovation workshops</div>
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">Trainer, Erasmus+ BIOMED 5.0 Project</div>
+                <div class="subsection-subtitle">Salim Habib University, Karachi | Jun 2025 – Present</div>
+                <div class="detail">✓ Applied research on AI in biomedical signal processing, wearables, robotics</div>
+                <div class="detail">✓ Equipment lifecycle management & preventive maintenance</div>
+                <div class="detail">✓ Collaboration with Dublin City University & Technical University Cluj-Napoca</div>
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">Undergraduate Research Assistant</div>
+                <div class="subsection-subtitle">Salim Habib University, Karachi | Mar 2024 – Jan 2025</div>
+                <div class="detail">✓ Developed master-slave robotic grasper with FSR haptic feedback</div>
+                <div class="detail">✓ AI-based tissue classification system (YOLOv8/v10)</div>
+                <div class="detail">✓ Hapto-Grasp software for intraoperative force visualization</div>
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">Biomedical Engineering Intern - Clinical Settings</div>
+                <div class="subsection-subtitle">Multiple Hospitals (Aga Khan, Dow University, RHQ Gilgit) | 2023</div>
+                <div class="detail">✓ Preventive maintenance on MRI, CT scan, ultrasound equipment</div>
+                <div class="detail">✓ Electrical safety testing (EST) on biomedical devices</div>
+                <div class="detail">✓ Equipment asset management using Infor EAM system</div>
+            </div>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="section">
+            <div class="section-title">
+                <span class="icon">🛠️</span> Technical Skills & Tools
+            </div>
+
+            <div class="skill-group">
+                <div class="skill-category">Robotics & Hardware</div>
+                <div class="skill-list">
+                    <span class="skill-tag">3-DOF Robotic Arms</span>
+                    <span class="skill-tag">FSR Sensors</span>
+                    <span class="skill-tag">MPU6050 IMU</span>
+                    <span class="skill-tag">Haptic Feedback</span>
+                    <span class="skill-tag">Embedded Systems</span>
+                    <span class="skill-tag">3D Printing</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <div class="skill-category">AI & Computer Vision</div>
+                <div class="skill-list">
+                    <span class="skill-tag">Deep Learning (CNNs)</span>
+                    <span class="skill-tag">YOLOv8/v10</span>
+                    <span class="skill-tag">GoogLeNet</span>
+                    <span class="skill-tag">OpenCV</span>
+                    <span class="skill-tag">Object Detection</span>
+                    <span class="skill-tag">Grad-CAM</span>
+                    <span class="skill-tag">NLP</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <div class="skill-category">Programming Languages</div>
+                <div class="skill-list">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">MATLAB</span>
+                    <span class="skill-tag">C++</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <div class="skill-category">Design & Simulation</div>
+                <div class="skill-list">
+                    <span class="skill-tag">AutoCAD</span>
+                    <span class="skill-tag">Simulink</span>
+                    <span class="skill-tag">COMSOL</span>
+                    <span class="skill-tag">Proteus</span>
+                    <span class="skill-tag">SoroSim</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <div class="skill-category">Research & Analysis</div>
+                <div class="skill-list">
+                    <span class="skill-tag">Statistical Analysis</span>
+                    <span class="skill-tag">ANOVA</span>
+                    <span class="skill-tag">Data Augmentation</span>
+                    <span class="skill-tag">Scientific Writing</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Academic References -->
+        <div class="section">
+            <div class="section-title">
+                <span class="icon">👨‍🏫</span> Academic References
+            </div>
+
+            <div class="reference">
+                <div class="reference-name">Dr. Imran Khan Niazi</div>
+                <div class="reference-title">Director, Centre for Chiropractic Research & Dean of Innovation & Technology</div>
+                <div class="reference-contact">New Zealand College of Chiropractic, Auckland | <a href="mailto:imran.niazi@nzchiro.co.nz">imran.niazi@nzchiro.co.nz</a></div>
+                <div class="reference-contact"><strong>Role:</strong> Master's Thesis External Supervisor</div>
+            </div>
+
+            <div class="reference">
+                <div class="reference-name">Prof. Dr. Muhammad Aamir</div>
+                <div class="reference-title">Dean, Faculty of Electrical & Computer Engineering</div>
+                <div class="reference-contact">Sir Syed University of Engineering & Technology (SSUET), Karachi | <a href="mailto:aamir@ssuet.edu.pk">aamir@ssuet.edu.pk</a></div>
+                <div class="reference-contact"><strong>Role:</strong> Mentor</div>
+            </div>
+
+            <div class="reference">
+                <div class="reference-name">Prof. Dr. Muhammad Zeeshan-ul-Haque</div>
+                <div class="reference-title">Dean, Faculty of Engineering</div>
+                <div class="reference-contact">Salim Habib University, Karachi | <a href="mailto:muhammad.zeeshan@shu.edu.pk">muhammad.zeeshan@shu.edu.pk</a></div>
+                <div class="reference-contact"><strong>Role:</strong> Bachelor's Thesis Supervisor & Mentor</div>
+            </div>
+
+            <div class="reference">
+                <div class="reference-name">Dr. Irfan Ahmed Usmani</div>
+                <div class="reference-title">Associate Professor, Faculty of Engineering</div>
+                <div class="reference-contact">Salim Habib University, Karachi | <a href="mailto:irfan.usmani@shu.edu.pk">irfan.usmani@shu.edu.pk</a></div>
+                <div class="reference-contact"><strong>Role:</strong> Research Mentor</div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>This portfolio serves as comprehensive evidence of academic achievements, research contributions, and technical expertise.</p>
+            <p>Last Updated: April 2025 | Download: <a href="#">PDF Version</a></p>
+        </div>
+    </div>
+</body>
+</html>
